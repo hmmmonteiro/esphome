@@ -47,8 +47,7 @@ void Eqiva::setup() {
     } else {
         this->is_paired_->publish_initial_state(false);
     }
-
-    ESP_LOGI("main", "Lock Status is %d", status);
+    ESP_LOGD(TAG, "Lock Status is %d", status);
 }
 
 void Eqiva::update() {
