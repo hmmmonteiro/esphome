@@ -38,7 +38,7 @@ void Eqiva::setup() {
     ESP_LOGCONFIG(TAG, "Setting up Eqiva KEYBLE gateway...");
     ESP_LOGCONFIG(TAG, "%s", this->card_key_);
 
-    BLEDevice::init("EqivaBLEgw");
+    //BLEDevice::init("EqivaBLEgw");
     eqivaBle_ = new eQ3("00:1a:22:18:a6:5c", "58d139296c9f2fb8c12a047b2e9d7a36", 0);
     status = eqivaBle_->_LockStatus;
 
